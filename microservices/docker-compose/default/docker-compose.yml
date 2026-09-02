@@ -1,0 +1,306 @@
+services:
+
+  userdb:
+    image: mysql
+    container_name: userdb
+    ports:
+      - "3301:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: userdb
+    networks:
+      - zen
+
+  bookingdb:
+    image: mysql
+    container_name: bookingdb
+    ports:
+      - "3302:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: bookingdb
+    networks:
+      - zen
+
+  categorydb:
+    image: mysql
+    container_name: categorydb
+    ports:
+      - "3303:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: categorydb
+    networks:
+      - zen
+
+  paymentdb:
+    image: mysql
+    container_name: paymentdb
+    ports:
+      - "3304:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: paymentdb
+    networks:
+      - zen
+
+  salondb:
+    image: mysql
+    container_name: salondb
+    ports:
+      - "3305:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: salondb
+    networks:
+      - zen
+
+  service-offeringdb:
+    image: mysql
+    container_name: service-offeringdb
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: service-offeringdb
+    networks:
+      - zen
+
+  eurekaserver:
+    image: "rithanyaa870/salon-eureka-server-com:v1"
+    container_name: eurekaserver
+    ports:
+      - "8070:8070"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8070/actuator/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 90s
+    networks:
+      - zen
+
+  user:
+    image: "rithanyaa870/salon-user-com:v1"
+    container_name: user
+    ports:
+      - "5001:5001"
+    depends_on:
+      userdb:
+        condition: service_healthy
+      eurekaserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5001/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      SPRING_APPLICATION_NAME: user-service
+      SPRING_DATASOURCE_URL: jdbc:mysql://userdb:3306/userdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    networks:
+      - zen
+
+  booking:
+    image: "rithanyaa870/salon-booking-service-com:v1"
+    container_name: booking
+    ports:
+      - "5005:5005"
+    depends_on:
+      bookingdb:
+        condition: service_healthy
+      eurekaserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5005/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      SPRING_APPLICATION_NAME: booking-service
+      SPRING_DATASOURCE_URL: jdbc:mysql://bookingdb:3306/bookingdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    networks:
+      - zen
+
+  category:
+    image: "rithanyaa870/salon-category-service-com:v1"
+    container_name: category
+    ports:
+      - "5003:5003"
+    depends_on:
+      categorydb:
+        condition: service_healthy
+      eurekaserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5003/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      SPRING_APPLICATION_NAME: category-service
+      SPRING_DATASOURCE_URL: jdbc:mysql://categorydb:3306/categorydb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    networks:
+      - zen
+
+  payment:
+    image: "rithanyaa870/salon-payment-service-com:v1"
+    container_name: payment
+    ports:
+      - "5006:5006"
+    depends_on:
+      paymentdb:
+        condition: service_healthy
+      eurekaserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5006/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      SPRING_APPLICATION_NAME: payment-service
+      SPRING_DATASOURCE_URL: jdbc:mysql://paymentdb:3306/paymentdb?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    networks:
+      - zen
+
+  salon:
+    image: "rithanyaa870/salon-service-com:v1"
+    container_name: salon
+    ports:
+      - "5002:5002"
+    depends_on:
+      salondb:
+        condition: service_healthy
+      eurekaserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5002/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      SPRING_APPLICATION_NAME: salon-service
+      SPRING_DATASOURCE_URL: jdbc:mysql://salondb:3306/salondb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    networks:
+      - zen
+
+  service-offering:
+    image: "rithanyaa870/salon-service-offering-com:v1"
+    container_name: service-offering
+    ports:
+      - "5004:5004"
+    depends_on:
+      service-offeringdb:
+        condition: service_healthy
+      eurekaserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5004/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      SPRING_APPLICATION_NAME: service-offering
+      SPRING_DATASOURCE_URL: jdbc:mysql://service-offeringdb:3306/service-offeringdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root123
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    networks:
+      - zen
+
+  gatewayserver:
+    image: "rithanyaa870/salon-gateway-server-com:v1"
+    container_name: gateway-server
+    ports:
+      - "5000:5000"
+    depends_on:
+      eurekaserver:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:5000/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    environment:
+      SPRING_APPLICATION_NAME: gateway-server
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
+    networks:
+      - zen
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    container_name: keycloak
+    command: start-dev
+    ports:
+      - "9090:8080"
+
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+
+    networks:
+      - zen
+
+networks:
+  zen:
+    driver: bridge
+

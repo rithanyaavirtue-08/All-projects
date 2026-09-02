@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/BookingServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/controller/BookingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/domain/BookingStatus$PaymentMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/domain/BookingStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/dto/BookingDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/dto/BookingRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/dto/BookingSlotDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/dto/CategoryDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/dto/SalonDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/dto/ServiceDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/dto/UserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/impl/BookingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/mapper/BookingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/model/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/model/SalonReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/repository/BookingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/com/zen/service/BookingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/${project.build.directory}/classes/src/main/java/com/zen/controller/HomeController.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/RITHANYAA/Downloads/microservices" value="3EyvxGHj9Uwo8nj8hWXEEPBb9Ic" />
+      <entry key="_C:/Users/RITHANYAA/Downloads/microservices/booking-service" value="3F32iEAR5TobtsrDyDlnRgAI13c" />
+      <entry key="_C:/Users/RITHANYAA/Downloads/microservices/category-service" value="3F4COHAJywzTTTcSZIXZBso8PGV" />
+      <entry key="_C:/Users/RITHANYAA/Downloads/microservices/eureka-server" value="3FG2obk3Oo51CKmEyYwTnoJkzUG" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rithanyaavirtue-08&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rithanyaavirtue-08/Saloon-Application.git&quot;,
+    &quot;accountId&quot;: &quot;9ea1a89b-c78d-47fe-acf5-77b87ebebef8&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3EyvxGHj9Uwo8nj8hWXEEPBb9Ic" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.PaymentServiceApplication.executor": "Run",
+    "Maven.booking-service [clean].executor": "Run",
+    "Maven.booking-service [compile].executor": "Run",
+    "Maven.booking-service [verify].executor": "Run",
+    "Maven.category-service [clean].executor": "Run",
+    "Maven.eureka-server [clean].executor": "Run",
+    "Maven.eureka-server [package].executor": "Run",
+    "Maven.gateway-server [clean].executor": "Run",
+    "Maven.microservices-parent [clean].executor": "Run",
+    "Maven.microservices-parent [compile].executor": "Run",
+    "Maven.payment-service [clean].executor": "Run",
+    "Maven.salon-service [clean].executor": "Run",
+    "Maven.service-offering [clean].executor": "Run",
+    "Maven.user-service [clean].executor": "Run",
+    "Maven.user-service [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BookingServiceApplication.executor": "Run",
+    "Spring Boot.CategoryServiceApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.GatewayServerApplication.executor": "Run",
+    "Spring Boot.PaymentServiceApplication.executor": "Run",
+    "Spring Boot.SalonServiceApplication.executor": "Run",
+    "Spring Boot.ServiceOfferingApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/RITHANYAA/Downloads/microservices/eureka-server/target/generated-test-sources/test-annotations",
+    "last_opened_file_path": "C:/Users/RITHANYAA/Downloads/microservices/payment-service/src/main/java/com/zen/payload/response",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Docker",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="zen.co.controller" />
+      <recent name="com.zen.controller" />
+      <recent name="com.zen.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\payment-service\src\main\java\com\zen\payload\response" />
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\payment-service\src\main\java\com\zen" />
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\booking-service\src\main\java\com\zen" />
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\service-offering\src\main\java\com\zen" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\category-service\src\main\java\com\zen" />
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\user-service" />
+      <recent name="C:\Users\RITHANYAA\Downloads\microservices\user-service\src\main\java\zen\co" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zen.domain" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="BookingServiceApplication" value="STOPPED" />
+              <entry key="CategoryServiceApplication" value="STOPPED" />
+              <entry key="EurekaServerApplication" value="FAILED" />
+              <entry key="GatewayServerApplication" value="STOPPED" />
+              <entry key="PaymentServiceApplication" value="FAILED" />
+              <entry key="SalonServiceApplication" value="STOPPED" />
+              <entry key="ServiceOfferingApplication" value="STOPPED" />
+              <entry key="UserServiceApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="microservices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="microservices" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BookingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="booking-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.BookingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="category-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.CategoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.GatewayServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="payment-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.PaymentServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalonServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="salon-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.SalonServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceOfferingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-offering" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.ServiceOfferingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zen.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.PaymentServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.ServiceOfferingApplication" />
+      <item itemvalue="Spring Boot.BookingServiceApplication" />
+      <item itemvalue="Spring Boot.CategoryServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayServerApplication" />
+      <item itemvalue="Spring Boot.SalonServiceApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="069ce5d7-4108-42b9-a99e-fdb6072a79d8" name="Changes" comment="" />
+      <created>1781163869732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781163869732</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.xml.ws:jakarta.xml.ws-api" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/booking-service/src/main/java/com/zen/impl/BookingServiceImpl.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment-service/src/main/java/com/zen/controller/PaymentController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
